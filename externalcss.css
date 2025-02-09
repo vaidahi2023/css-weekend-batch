@@ -1,0 +1,24 @@
+/* p
+{
+    background-color: aqua;
+} */
+table 
+{
+    background-color: coral;
+    height: 200px;
+    width:200px;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline dotted;
+}
+table tr 
+{
+    background-color: yellow;
+    /* text-decoration: underline dotted; */
+}
+.box1
+{
+    height: 200px;
+    width:700px;
+    background-color: aqua;
+}
