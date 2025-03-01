@@ -1,0 +1,25 @@
+css ---casauading style sheet
+it is used to style the webpage
+
+types of css 
+inline css
+internal css
+external css
+
+selectors --tagname,class,id 
+property --color,border
+value  --red,green
+
+h1 --selectors
+{
+    background-color:red;
+    background-color --it is property
+    red--value
+}
+
+
+class  --multiple tag
+id  --unique defined 
+
+. --class
+# --id 
