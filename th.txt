@@ -35,6 +35,15 @@ rem
 vh
 vw 
 
+position 
+
+types of position
+static
+absolute
+relative
+sticky
+fixed
+
 
 
 
