@@ -12,13 +12,19 @@
             background-color: bisque;
             border:2px solid black;
             display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
+            /* flex-direction:row;
+            flex-wrap: wrap; */
+            /* shorthand pro flex-direction flex-wrap */
+            flex-flow:column;            /* justify-content: center; */
+            /* start end center  */
+            /* align-items: stretch; */
+            align-content:center;
+
         }
         .box
         {
             height: 200px;
-            width:200px;
+            width:300px;
             background-color: brown;
             border: 2px solid lightblue;
         }
@@ -31,10 +37,10 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
+      
         <div class="box"></div>
         <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box"></div> 
 
     </div>
 </body>
