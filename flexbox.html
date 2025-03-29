@@ -15,10 +15,11 @@
             /* flex-direction:row;
             flex-wrap: wrap; */
             /* shorthand pro flex-direction flex-wrap */
-            flex-flow:column;            /* justify-content: center; */
+            flex-flow:row wrap ;            
+            /* justify-content: space-evenly; */
             /* start end center  */
-            /* align-items: stretch; */
-            align-content:center;
+            /* align-items:center; */
+            /* align-content:flex-start; */
 
         }
         .box
@@ -28,19 +29,25 @@
             background-color: brown;
             border: 2px solid lightblue;
         }
+        .box:hover
+        {
+            background-color: blueviolet;
+            color:red;
+            width:400px;
+        }
     </style>
 
 </head>
 <body>
     <div class="container">
-        <div class="box"></div>
+        <div class="box"><p>13221</p></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
       
+        <!-- <div class="box"></div>
         <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div> 
+        <div class="box"></div>  -->
 
     </div>
 </body>
