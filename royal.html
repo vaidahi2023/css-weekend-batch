@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <style>
         *
         {
@@ -51,7 +56,7 @@
         {
             color: orangered;
         }
-        button
+        .button
         {
             height:40px;
             width:500px;
@@ -60,7 +65,7 @@
             margin-left: 120px;
             border: none;
         }
-        button a
+        .button a
         {
             text-decoration: none;
             color:white;
@@ -84,6 +89,7 @@
         .training 
         {
             margin-top: 50px;
+            width:70%;
            
         }
         .training p
@@ -100,7 +106,25 @@
             margin-right: 20px;
             color: orangered;
         }
-
+        .holelens
+        {
+            width:50%;
+        }
+        .main
+        {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        #border1
+        {
+            border-left: 2px solid lightgray;
+            border-right: 2px solid lightgrey;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+       
     </style>
 </head>
 <body>
@@ -115,8 +139,8 @@
              <a href="">+91 9879472527 </a>
         </div>
     </div>
-    <button><a href="">Register Here For Free Online seminar on What after 10th/12th</a></button>
-    <button><a href="">Register Here For Free Online Bootcamp</a></button>
+    <button class="button"><a href="">Register Here For Free Online seminar on What after 10th/12th</a></button>
+    <button class="button"><a href="">Register Here For Free Online Bootcamp</a></button>
     <div class="container">
         <div class="technosoft">
         <h1>Welcome To Royal Technosoft</h1>
@@ -127,7 +151,106 @@
             <p><i class="fa-solid fa-caret-right"></i>Live Project Training</p>
             <p><i class="fa-solid fa-caret-right"></i>Soft skill development</p>
         </div>
-        </div>
     </div>
+        <div class="hololens">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2018/11/dhirajpoojara.png" alt="">
+            <div class="main">
+                <div class="box">
+                    <img src="https://royaltechnosoft.com/wp-content/uploads/2018/11/jobfair-1.png" alt="">
+                    <p>Job Fair</p>
+                </div>
+                <div class="box" id="border1">
+                    <img src="https://royaltechnosoft.com/wp-content/uploads/2018/11/campuss.png" alt="">
+                    <p>Campus<br> Interviews</p>
+                </div>
+                <div class="box">
+                    <img src="https://royaltechnosoft.com/wp-content/uploads/2018/11/pertinalize_interview.png" alt="">
+                    <p>Personalized <br>Interviews</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2017/12/team-section-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>meet the team</h2>
+                <img src="https://royaltechnosoft.com/wp-content/uploads/2018/11/team1.png" alt="">    
+              <h5>Arati Kyada</h5>
+              <p>She is an expert with 5+ years of expertise in developing Android and Flutter applications and Trainer, 
+                including designing, developing, testing, and managing mobile applications.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2017/12/team-section-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2017/12/team-section-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2017/12/team-section-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2017/12/team-section-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2017/12/team-section-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2017/12/team-section-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://royaltechnosoft.com/wp-content/uploads/2017/12/team-section-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </body>
 </html>
