@@ -1,0 +1,57 @@
+<!-- 
+ pseudoelemnts 
+ firstline
+ firstletter
+ marker
+ selection
+ after 
+ before
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p::first-line
+        {
+            background-color: coral;
+        }
+        .p::first-letter
+        {
+            background-color: yellow;
+        }
+        ::selection
+        {
+            color: blue;
+        }
+        .p::selection
+        {
+            color:green;
+        }
+        li
+        {
+            color:red;
+        }
+        ::marker
+        {
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+        <h1>pseudo elemnets</h1>
+ 
+    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque neque dolores tempora at animi incidunt error? Voluptatem sapiente debitis dolorum recusandae at earum repellat! Quisquam sint atque rem rerum iure?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, cumque, quibusdam explicabo aut suscipit ad laboriosam, dicta nam possimus perferendis fugiat deleniti pariatur officia excepturi. Veniam tempore veritatis voluptatibus cumque?
+    </p>
+    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque neque dolores tempora at animi incidunt error? Voluptatem sapiente debitis dolorum recusandae at earum repellat! Quisquam sint atque rem rerum iure?</p>
+
+    <ul>
+        <li>orange</li>
+        <li>mango</li>
+        <li>apple</li>
+    </ul>
+</body>
+</html>
