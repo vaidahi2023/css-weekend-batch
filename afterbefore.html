@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height: 300px;
+            width:300px;
+            background-image: url('image/flower.jpeg');
+            background-size: cover;
+            position:absolute;
+            top:50px;
+            left:100px;
+        }
+        .box::after
+        {
+            height:300px;
+            width:150px;
+            background-color: coral;
+            position: absolute;
+            left:0;
+            bottom: 0;
+            content: 'first';
+        }
+        .box::before
+        {
+            height: 300px;
+            width:150px;
+            background-color: lightgreen;
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .box:hover::after
+        {
+            width:0px;
+            /* transition: 2s all; */
+            transition: 2s width;
+        }
+        .box:hover::before
+        {
+            width:0px;
+            transition: 2s all;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
