@@ -1,0 +1,61 @@
+<!-- 
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+            height: 200px;
+            width:200px;
+            background-color: aqua;
+            position: absolute;
+        }
+        .box1::after
+        {
+            height: 100px;
+            width:200px;
+            background-color: rgb(220, 205, 209);
+            opacity: 0.8;
+            position: absolute;
+            content: '';
+            /* transition:3s all; */
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            transition-timing-function: ease;
+            transition-delay: 1s;
+            transition-duration: 2s;
+            transition-property: all;
+        }
+        .box1::before
+        {
+            height: 100px;
+            width:200px;
+            background-color: rgb(182, 150, 203);
+            opacity: 0.9;
+            position: absolute;
+            bottom: 0;
+            content: '';
+        }
+        .box1:hover::after
+        {
+            width:0;
+            background-color: blue;
+            /* transition:2s all; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
