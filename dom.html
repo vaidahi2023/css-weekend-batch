@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter the number:</label>
+        <input type="text" id="n1"><br><br>
+        <label for="">Enter the number</label>
+        <input type="text" id="n2"><br><br>
+        <input type="radio" name="g" value="add">Add
+        <input type="radio" name="g" value="sub">sub
+        <input type="radio" name="g" value="div">div 
+        <input type="radio" name="g" value="mul">mul <br><br>
+        <input type="button" onclick="print()" value="click here">
+    </form>
+    <p id="res"></p>
+    <script>
+        function print()
+        {
+
+        var r=0
+        let n1=parseInt(document.getElementById("n1").value) 
+        let n2=parseInt(document.getElementById("n2").value)
+        let op=document.getElementsByName("g")
+        var ops
+        for (let i = 0; i < op.length; i++) {
+            if(op[i].checked)
+            {
+                ops=op[i].value
+                break;
+            }
+            
+        }
+        if(ops=="add")
+        {
+            r=n1+n2
+            document.getElementById("res").innerHTML=`Result is ${r}`
+            console.log("res="+r)
+        }
+    }
+    </script>
+</body>
+</html>

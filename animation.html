@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+            height: 200px;
+            width:200px;
+            background-color: coral;
+            position: absolute;
+            animation-name: ani;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        /* @keyframes  ani{
+            from
+            {
+                top:10;
+                left:0;
+                /* background-color: black; */
+           /* }
+            to 
+            {
+                top:10;
+                transform: translate(400px);
+                background-color: aqua;
+               
+            }   
+
+        }*/
+        @keyframes ani {
+            /* 0 - 100 */
+            0%
+            {
+                top:10px;
+                left: 0;
+
+            }
+            25%
+            {
+                top:10px;
+                left:400px;
+                background-color: black;
+            }
+            50%
+            {
+                top:400px;
+                left:400px;
+            }
+            75%
+            {
+                top:400px;
+                left:0;
+                background-color: crimson;
+            }
+            100%
+            {
+                top:0;
+                left:0;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

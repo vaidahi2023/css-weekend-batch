@@ -1,0 +1,62 @@
+<!-- 
+ pseudo elements\
+firstline
+firstletter
+selection
+marker
+after 
+before
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+            height: 500px;
+            width:500px;
+            background-color: cornflowerblue;
+            font-size: 20px;
+        }
+        .box1::first-line
+        {
+            background-color: greenyellow;
+        }
+        /* p::first-line
+        {
+            background-color: green;
+        } */
+         .box1::first-letter
+         {
+            background-color: blue;
+         }
+         ::marker
+         {
+            color: darkmagenta;
+            font-size: 30px;
+         }
+         .box1::selection
+         {
+            color: antiquewhite;
+         }
+         ::selection
+         {
+            color: antiquewhite;
+         }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nobis odit enim, quas tempora repellendus optio cupiditate atque harum aut dolor delectus eius rerum a laboriosam facilis itaque? Reiciendis, quos!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro molestias dolorem quae magni dignissimos dolor nobis neque incidunt? Accusantium, et corrupti nostrum culpa illum nisi doloribus labore tempore quia libero?</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 1</li>
+            <li>item 1</li>
+        </ul>
+    </div>
+</body>
+</html>
